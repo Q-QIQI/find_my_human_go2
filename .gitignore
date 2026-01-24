@@ -1,0 +1,44 @@
+# ROS 2 workspace build / devel / install / log folders
+build/
+devel/
+install/
+log/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+
+# YOLO / ML model weights & large files (already tracked or should be in git LFS / external)
+*.pt
+*.weights
+*.onnx
+*.engine
+*.pth
+*.ckpt
+*.safetensors
+
+# Common editors & OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Colcon / ROS logs & caches
+*.log
+colcon_command_prefix_*
+/AMENT_PREFIX_PATH_*
+
+# pytest / testing caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Do NOT ignore these (important source files)
+!human_tracker/human_tracker/yolov8n.pt   # ← if you really want to commit the model (5–10 MB, ok for small repo)
