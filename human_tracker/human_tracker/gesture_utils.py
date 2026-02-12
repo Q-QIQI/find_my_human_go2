@@ -6,7 +6,7 @@ class GestureDetector:
         pass
 
     def check_raise_hand(self, kps):
-
+  
         if len(kps) == 0: return False, ""
 
         # COCO Keypoints 索引:
